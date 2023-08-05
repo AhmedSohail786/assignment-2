@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+        
+      
+    
+
+    <script>
+        let arr = [
+    {   samsung:{
+        samsungA30:{
+        brand: "Samsung",
+        model: "A30",
+        price: "40000",
+        camera: "40px",
+        ram: "8gb",
+        rom : "128gb",
+        isApproved : true,
+    },
+
+    samsungA10:{
+      
+        brand: "Samsung",
+        model: "A10",
+        price: "40000",
+        camera: "40px",
+        ram: "4gb",
+        rom : "128gb",
+        isApproved : true,
+    },
+    samsungA20:{
+        brand: "Samsung",
+        model: "A20",
+        price: "40000",
+        camera: "40px",
+        ram: "4gb",
+        rom : "128gb",
+        isApproved : true,
+    },
+},
+    vivo:{
+        vivoY20:{
+        brand: "Vivo",
+        model: "Y20",
+        price: "20000",
+        camera: "40px",
+        ram: "2gb",
+        rom : "32gb",
+        isApproved : true,
+        },
+    vivoY11:{
+        brand: "Vivo",
+        model: "Y11",
+        price: "20000",
+        camera: "40px",
+        ram: "3gb",
+        rom : "32gb",
+        isApproved : true,
+    },
+    vivoY15:{
+        brand: "Vivo",
+        model: "Y15",
+        price: "30000",
+        camera: "40px",
+        ram: "4gb",
+        rom : "64gb",
+        isApproved : true,
+    },
+    },
+    motorola:{
+        motorola123:{
+        brand: "Motorola",
+        model: "123",
+        price: "5000",
+        camera: "2px",
+        ram: "2gb",
+        rom : "32gb",
+        isApproved : true,
+        },
+    },
+    Iphone:{
+        Iphone12:{
+        brand: "Iphone",
+        model: "12",
+        price: "300000",
+        camera: "40px",
+        ram: "8gb",
+        rom : "128gb",
+        isApproved : true,
+        },
+    Iphone13:{
+        brand: "Iphone",
+        model: "13",
+        price: "300000",
+        camera: "40px",
+        ram: "8gb",
+        rom : "128gb",
+        isApproved : true,
+    },
+    IphoneX:{
+        brand: "Iphone",
+        model: "X",
+        price: "300000",
+        camera: "40px",
+        ram: "8gb",
+        rom : "128gb",
+        isApproved : true,
+    },
+    },
+}
+]
+
+
+function ab(){
+    let arr2= arr.filter((x)=>x.samsung).map((x)=>x.samsung);
+    
+    let arr5= arr.filter((x)=>x.vivo).map((x)=>x.vivo);
+
+    let arr3= arr.map((x)=>x.Iphone);
+    // console.log(arr5)
+    
+      console.log(arr2,arr5,arr3)
+}
+
+    </script>
+        <select name="brand" id="brand">
+            <option value="" id="samsungA30">SamsungA30</option>
+            <option value="" id="samsungA10">SamsungA10</option>
+            <option value="" id="samsungA20">SamsungA20</option>
+            <option value="" id="vivoY20">VivoY20</option>
+            <option value="" id="vivoY11">VivoY11</option>
+            <option value="" id="vivoY15">VivoY15</option>
+            <option value="" id="motorola123">Motorola123</option>
+            <option value="" id="Iphone12">Iphone12</option>
+            <option value="" id="Iphone13">Iphone13</option>
+    
+            <option value="" id="Iphonex">Iphonex</option>
+    
+            
+        </select>
+        <input  type="text" id="text" value="vivo,samsung,Iphone,motorola" placeholder="samsung">
+            <button onclick="ab ()" id="button">select</button>
+</body>
+</html>
